@@ -34,16 +34,23 @@ header h1 a:hover {
 .group-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-auto-rows: 1fr;
   gap: 0.75rem;
   padding: 0 2rem 3rem;
 }
 
 .group-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   border-radius: 0;
   overflow: hidden;
   background: #fff;
   box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.single-card:not(:has(.group-card-info)) {
+  background: transparent;
+  box-shadow: none;
 }
 
 .group-card:hover {
@@ -52,7 +59,7 @@ header h1 a:hover {
 
 .group-card img {
   width: 100%;
-  height: auto;
+  flex: 1;
   display: block;
   aspect-ratio: 4/3;
   object-fit: cover;

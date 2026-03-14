@@ -43,5 +43,20 @@
       "originalWidth": 6000,
       "originalHeight": 4000
     }
+  },
+  {
+    "id": "dscf6726",
+    "originalFilename": "DSCF6726.jpg",
+    "caption": "",
+    "dateAdded": "2026-03-14T21:54:03.453Z",
+    "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773525242/_singles/dscf6726-full.webp",
+    "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773525241/_singles/dscf6726-thumb.webp",
+    "thumbWidth": 600,
+    "thumbHeight": 400,
+    "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773525241/_singles/dscf6726-cover.webp",
+    "exif": {
+      "originalWidth": 4896,
+      "originalHeight": 3264
+    }
   }
 ]
