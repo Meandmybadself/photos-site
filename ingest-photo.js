@@ -84,6 +84,9 @@ async function main() {
     }
 
     await copyFile(absPath, join(PATHS.singlesInbox, filename));
+    if (opts.caption) {
+      await writeFile(join(PATHS.singlesInbox, `${id}.json`), JSON.stringify({ caption: opts.caption }) + '\n');
+    }
     console.log(`  Copied ${filename} -> inbox/_singles/`);
   }
 

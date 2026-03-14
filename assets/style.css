@@ -7,7 +7,7 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #1a1a1a;
-  background: #e8e8e8;
+  background: #ddd1d1;
   line-height: 1.5;
 }
 
@@ -17,7 +17,7 @@ a {
 }
 
 header {
-  padding: 2rem 2rem 1rem;
+  padding: 1rem 2rem 1rem;
 }
 
 header h1 {
@@ -119,11 +119,6 @@ header h1 a:hover {
   width: 100%;
   height: auto;
   display: block;
-  transition: opacity 0.2s;
-}
-
-.photo-thumb:hover img {
-  opacity: 0.85;
 }
 
 /* Individual photo page */

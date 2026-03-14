@@ -1,0 +1,32 @@
+[
+  {
+    "id": "r0000258",
+    "originalFilename": "R0000258.jpg",
+    "caption": "Me & Dan",
+    "dateAdded": "2026-03-14T20:45:21.931Z",
+    "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773521121/_singles/r0000258-full.webp",
+    "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773521121/_singles/r0000258-thumb.webp",
+    "thumbWidth": 600,
+    "thumbHeight": 400,
+    "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773521121/_singles/r0000258-cover.webp",
+    "exif": {
+      "originalWidth": 6000,
+      "originalHeight": 4000
+    }
+  },
+  {
+    "id": "img-6561",
+    "originalFilename": "IMG_6561.jpg",
+    "caption": "Young Brooks at Ken's Barber",
+    "dateAdded": "2026-03-14T21:39:36.319Z",
+    "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773524375/_singles/img-6561-full.webp",
+    "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773524375/_singles/img-6561-thumb.webp",
+    "thumbWidth": 600,
+    "thumbHeight": 400,
+    "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773524375/_singles/img-6561-cover.webp",
+    "exif": {
+      "originalWidth": 6000,
+      "originalHeight": 4000
+    }
+  }
+]

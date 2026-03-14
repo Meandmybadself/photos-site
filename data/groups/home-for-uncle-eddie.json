@@ -1,0 +1,70 @@
+{
+  "slug": "home-for-uncle-eddie",
+  "title": "Home for Uncle Eddie",
+  "description": "Was home for my Uncle Eddie's funeral in Niles, Ohio",
+  "dateAdded": "2026-03-14T21:10:46.283Z",
+  "protected": false,
+  "coverImage": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773522641/home-for-uncle-eddie/r0000898-cover.webp",
+  "photos": [
+    {
+      "id": "r0000898",
+      "originalFilename": "R0000898.jpg",
+      "caption": "",
+      "order": 0,
+      "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773522641/home-for-uncle-eddie/r0000898-full.webp",
+      "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773522640/home-for-uncle-eddie/r0000898-thumb.webp",
+      "thumbWidth": 600,
+      "thumbHeight": 400,
+      "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773522641/home-for-uncle-eddie/r0000898-cover.webp",
+      "exif": {
+        "originalWidth": 5633,
+        "originalHeight": 3755
+      }
+    },
+    {
+      "id": "r0000961",
+      "originalFilename": "R0000961.jpg",
+      "caption": "",
+      "order": 1,
+      "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773522642/home-for-uncle-eddie/r0000961-full.webp",
+      "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773522642/home-for-uncle-eddie/r0000961-thumb.webp",
+      "thumbWidth": 600,
+      "thumbHeight": 400,
+      "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773522642/home-for-uncle-eddie/r0000961-cover.webp",
+      "exif": {
+        "originalWidth": 3454,
+        "originalHeight": 2303
+      }
+    },
+    {
+      "id": "r0000971",
+      "originalFilename": "R0000971.jpg",
+      "caption": "",
+      "order": 2,
+      "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773522643/home-for-uncle-eddie/r0000971-full.webp",
+      "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773522643/home-for-uncle-eddie/r0000971-thumb.webp",
+      "thumbWidth": 600,
+      "thumbHeight": 400,
+      "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773522643/home-for-uncle-eddie/r0000971-cover.webp",
+      "exif": {
+        "originalWidth": 1000,
+        "originalHeight": 666
+      }
+    },
+    {
+      "id": "r0000995",
+      "originalFilename": "R0000995.jpg",
+      "caption": "",
+      "order": 3,
+      "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773522644/home-for-uncle-eddie/r0000995-full.webp",
+      "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773522644/home-for-uncle-eddie/r0000995-thumb.webp",
+      "thumbWidth": 600,
+      "thumbHeight": 400,
+      "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773522644/home-for-uncle-eddie/r0000995-cover.webp",
+      "exif": {
+        "originalWidth": 3424,
+        "originalHeight": 2283
+      }
+    }
+  ]
+}

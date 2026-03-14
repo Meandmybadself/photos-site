@@ -71,14 +71,26 @@ async function scanSinglesInbox() {
   } catch {
     return [];
   }
-  return entries
+  const imageFiles = entries
     .filter(f => SUPPORTED_EXTENSIONS.has(extname(f).toLowerCase()))
-    .sort()
-    .map(f => ({
+    .sort();
+
+  const results = [];
+  for (const f of imageFiles) {
+    const id = slugify(f);
+    let caption = '';
+    try {
+      const sidecar = JSON.parse(await readFile(join(PATHS.singlesInbox, `${id}.json`), 'utf-8'));
+      caption = sidecar.caption || '';
+    } catch { /* no sidecar */ }
+    results.push({
       filename: f,
       absolutePath: join(PATHS.singlesInbox, f),
-      id: slugify(f),
-    }));
+      id,
+      caption,
+    });
+  }
+  return results;
 }
 
 // --- Commands ---
@@ -175,7 +187,7 @@ async function cmdFull() {
         existingSingles.push({
           id: single.id,
           originalFilename: single.filename,
-          caption: '',
+          caption: single.caption,
           dateAdded: new Date().toISOString(),
           url: uploaded.full.url,
           thumbnail: uploaded.thumb.url,
