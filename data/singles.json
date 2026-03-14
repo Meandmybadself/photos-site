@@ -28,5 +28,20 @@
       "originalWidth": 6000,
       "originalHeight": 4000
     }
+  },
+  {
+    "id": "r0000155",
+    "originalFilename": "R0000155.jpg",
+    "caption": "",
+    "dateAdded": "2026-03-14T21:47:43.099Z",
+    "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773524862/_singles/r0000155-full.webp",
+    "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773524862/_singles/r0000155-thumb.webp",
+    "thumbWidth": 600,
+    "thumbHeight": 400,
+    "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773524862/_singles/r0000155-cover.webp",
+    "exif": {
+      "originalWidth": 6000,
+      "originalHeight": 4000
+    }
   }
 ]
