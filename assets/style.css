@@ -1,0 +1,193 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1a1a1a;
+  background: #fafafa;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  padding: 2rem 2rem 1rem;
+}
+
+header h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+header h1 a:hover {
+  opacity: 0.6;
+}
+
+/* Homepage / Albums index — group grid */
+.group-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem 3rem;
+}
+
+.group-card {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.group-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  transform: translateY(-2px);
+}
+
+.group-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.group-card-info {
+  padding: 0.75rem 1rem;
+}
+
+.group-card-info h2 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.group-card-info p {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.15rem;
+}
+
+/* Album detail */
+.album {
+  padding: 0 2rem 3rem;
+}
+
+.album-header {
+  margin-bottom: 1.5rem;
+}
+
+.album-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.album-description {
+  color: #555;
+  margin-top: 0.25rem;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 0.75rem;
+}
+
+.photo-thumb {
+  display: block;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.photo-thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.2s;
+}
+
+.photo-thumb:hover img {
+  opacity: 0.85;
+}
+
+/* Individual photo page */
+.photo-detail {
+  padding: 0 2rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.breadcrumb a {
+  color: #555;
+}
+
+.breadcrumb a:hover {
+  color: #1a1a1a;
+}
+
+figure {
+  margin-bottom: 1rem;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.photo-pagination {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.photo-nav {
+  font-size: 0.9rem;
+  color: #555;
+  min-width: 80px;
+}
+
+.photo-nav:hover {
+  color: #1a1a1a;
+}
+
+.photo-nav-next {
+  text-align: right;
+}
+
+/* EXIF metadata */
+.exif-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 640px) {
+  header { padding: 1.25rem 1rem 0.75rem; }
+  .group-grid { padding: 0 1rem 2rem; gap: 1rem; grid-template-columns: 1fr; }
+  .album { padding: 0 1rem 2rem; }
+  .photo-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.5rem; }
+  .photo-detail { padding: 0 1rem 2rem; }
+}

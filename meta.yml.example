@@ -1,0 +1,15 @@
+title: BWCA Trip 2026
+description: Four days paddling the Boundary Waters with the crew.
+cover: img003.jpg
+cover_position: center  # center | top | bottom | left | right (default: center)
+protected: false
+
+photos:
+  - file: img003.jpg
+    caption: Portaging into Knife Lake.
+  - file: img001.jpg
+    caption: Morning fog on the first day.
+  - file: img007.jpg
+    caption: ""
+  - file: img002.jpg
+    caption: Camp at the first portage site.
