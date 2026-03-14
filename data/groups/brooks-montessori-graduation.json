@@ -1,0 +1,55 @@
+{
+  "slug": "brooks-montessori-graduation",
+  "title": "Brooks' Montessori graduation",
+  "description": "",
+  "dateAdded": "2026-03-14T19:22:20.346Z",
+  "protected": false,
+  "coverImage": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516134/brooks-montessori-graduation/img-8939-cover.webp",
+  "photos": [
+    {
+      "id": "img-8939",
+      "originalFilename": "IMG_8939.jpg",
+      "caption": "",
+      "order": 0,
+      "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516134/brooks-montessori-graduation/img-8939-full.webp",
+      "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516134/brooks-montessori-graduation/img-8939-thumb.webp",
+      "thumbWidth": 600,
+      "thumbHeight": 400,
+      "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516134/brooks-montessori-graduation/img-8939-cover.webp",
+      "exif": {
+        "originalWidth": 4447,
+        "originalHeight": 2965
+      }
+    },
+    {
+      "id": "img-8960",
+      "originalFilename": "IMG_8960.jpg",
+      "caption": "",
+      "order": 1,
+      "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516136/brooks-montessori-graduation/img-8960-full.webp",
+      "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516136/brooks-montessori-graduation/img-8960-thumb.webp",
+      "thumbWidth": 600,
+      "thumbHeight": 400,
+      "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516136/brooks-montessori-graduation/img-8960-cover.webp",
+      "exif": {
+        "originalWidth": 5043,
+        "originalHeight": 3362
+      }
+    },
+    {
+      "id": "img-8968",
+      "originalFilename": "IMG_8968.jpg",
+      "caption": "",
+      "order": 2,
+      "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516138/brooks-montessori-graduation/img-8968-full.webp",
+      "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516138/brooks-montessori-graduation/img-8968-thumb.webp",
+      "thumbWidth": 600,
+      "thumbHeight": 900,
+      "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516138/brooks-montessori-graduation/img-8968-cover.webp",
+      "exif": {
+        "originalWidth": 3472,
+        "originalHeight": 5208
+      }
+    }
+  ]
+}

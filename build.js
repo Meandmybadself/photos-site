@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 import { readFile, writeFile, readdir, mkdir, rm, unlink } from 'node:fs/promises';
-import { join } from 'node:path';
-import { PATHS } from './lib/config.js';
+import { join, extname, basename } from 'node:path';
+import { PATHS, SUPPORTED_EXTENSIONS } from './lib/config.js';
 import { scanInbox, slugify } from './lib/inbox.js';
 import { resizePhoto, cleanBuildDir } from './lib/images.js';
 import { initCloudinary, uploadPhotoVariants, deletePhotoAssets, deleteAlbumAssets } from './lib/cloudinary.js';
@@ -51,6 +51,36 @@ async function readAllManifests() {
   return manifests;
 }
 
+async function readSingles() {
+  try {
+    return JSON.parse(await readFile(PATHS.singlesIndex, 'utf-8'));
+  } catch {
+    return [];
+  }
+}
+
+async function writeSingles(singles) {
+  await mkdir(PATHS.data, { recursive: true });
+  await writeFile(PATHS.singlesIndex, JSON.stringify(singles, null, 2) + '\n');
+}
+
+async function scanSinglesInbox() {
+  let entries;
+  try {
+    entries = await readdir(PATHS.singlesInbox);
+  } catch {
+    return [];
+  }
+  return entries
+    .filter(f => SUPPORTED_EXTENSIONS.has(extname(f).toLowerCase()))
+    .sort()
+    .map(f => ({
+      filename: f,
+      absolutePath: join(PATHS.singlesInbox, f),
+      id: slugify(f),
+    }));
+}
+
 // --- Commands ---
 
 async function cmdFull() {
@@ -86,6 +116,8 @@ async function cmdFull() {
           order: photo.order,
           url: uploaded.full.url,
           thumbnail: uploaded.thumb.url,
+          thumbWidth: resized.thumb.width,
+          thumbHeight: resized.thumb.height,
           coverUrl: uploaded.cover.url,
           ...(resized.exif && { exif: resized.exif }),
         });
@@ -127,8 +159,47 @@ async function cmdFull() {
     console.log(`[${group.slug}] Inbox cleaned.`);
   }
 
+  // Process singles inbox
+  const singlesInbox = await scanSinglesInbox();
+  const existingSingles = await readSingles();
+  const existingSingleIds = new Set(existingSingles.map(s => s.id));
+  const newSingles = singlesInbox.filter(s => !existingSingleIds.has(s.id));
+
+  if (newSingles.length > 0) {
+    console.log(`[singles] Processing ${newSingles.length} new photo(s)...`);
+    for (const single of newSingles) {
+      try {
+        console.log(`  ${single.id}...`);
+        const resized = await resizePhoto(single.absolutePath, '_singles', single.id);
+        const uploaded = await uploadPhotoVariants(resized, '_singles', single.id);
+        existingSingles.push({
+          id: single.id,
+          originalFilename: single.filename,
+          caption: '',
+          dateAdded: new Date().toISOString(),
+          url: uploaded.full.url,
+          thumbnail: uploaded.thumb.url,
+          thumbWidth: resized.thumb.width,
+          thumbHeight: resized.thumb.height,
+          coverUrl: uploaded.cover.url,
+          ...(resized.exif && { exif: resized.exif }),
+        });
+        console.log(`  ${single.id} done`);
+      } catch (err) {
+        await deletePhotoAssets('_singles', single.id).catch(() => {});
+        console.warn(`  [SKIP] ${single.id}: ${err.message}`);
+      }
+    }
+    await cleanBuildDir('_singles');
+    await writeSingles(existingSingles);
+    // Clean singles inbox
+    await rm(PATHS.singlesInbox, { recursive: true, force: true });
+    console.log(`[singles] Done.`);
+  }
+
   // Rebuild groups index from all manifests
   const allManifests = await readAllManifests();
+  const allSingles = await readSingles();
   const groupsIndex = {
     groups: allManifests.map(m => ({
       slug: m.slug,
@@ -143,18 +214,18 @@ async function cmdFull() {
   await writeGroupsIndex(groupsIndex);
 
   // Generate all HTML
-  await generateSite(groupsIndex, allManifests);
+  await generateSite(groupsIndex, allManifests, allSingles);
   console.log('Site generated.');
 }
 
 async function cmdRegen() {
   const groupsIndex = await readGroupsIndex();
   const allManifests = await readAllManifests();
+  const allSingles = await readSingles();
 
-  // Re-sort index
   groupsIndex.groups.sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded));
 
-  await generateSite(groupsIndex, allManifests);
+  await generateSite(groupsIndex, allManifests, allSingles);
   console.log('Site regenerated (HTML only).');
 }
 
@@ -207,6 +278,7 @@ async function cmdDelete(slug, photoId) {
 
   // Rebuild index and regenerate
   const allManifests = await readAllManifests();
+  const allSingles = await readSingles();
   const groupsIndex = {
     groups: allManifests.map(m => ({
       slug: m.slug,
@@ -219,7 +291,43 @@ async function cmdDelete(slug, photoId) {
     })),
   };
   await writeGroupsIndex(groupsIndex);
-  await generateSite(groupsIndex, allManifests);
+  await generateSite(groupsIndex, allManifests, allSingles);
+  console.log('Site regenerated.');
+}
+
+async function cmdDeleteSingle(photoId) {
+  initCloudinary();
+
+  const singles = await readSingles();
+  const index = singles.findIndex(s => s.id === photoId);
+  if (index === -1) throw new Error(`Single photo "${photoId}" not found.`);
+
+  console.log(`Deleting _singles/${photoId} from Cloudinary...`);
+  await deletePhotoAssets('_singles', photoId);
+
+  singles.splice(index, 1);
+  await writeSingles(singles);
+
+  // Remove photo HTML directory
+  await rm(join(PATHS.photos, photoId), { recursive: true, force: true });
+
+  console.log(`Single photo "${photoId}" deleted.`);
+
+  // Regenerate
+  const allManifests = await readAllManifests();
+  const groupsIndex = {
+    groups: allManifests.map(m => ({
+      slug: m.slug,
+      title: m.title,
+      description: m.description,
+      dateAdded: m.dateAdded,
+      coverImage: m.coverImage,
+      photoCount: m.photos.length,
+      protected: m.protected,
+    })),
+  };
+  await writeGroupsIndex(groupsIndex);
+  await generateSite(groupsIndex, allManifests, singles);
   console.log('Site regenerated.');
 }
 
@@ -230,6 +338,16 @@ function parseArgs(argv) {
 
   if (args.includes('--regen')) {
     return { mode: 'regen' };
+  }
+
+  const deleteSingleIndex = args.indexOf('--delete-single');
+  if (deleteSingleIndex !== -1) {
+    const photoId = args[deleteSingleIndex + 1];
+    if (!photoId) {
+      console.error('Usage: node build.js --delete-single <photoId>');
+      process.exit(1);
+    }
+    return { mode: 'delete-single', photoId };
   }
 
   const deleteIndex = args.indexOf('--delete');
@@ -258,6 +376,9 @@ async function main() {
       break;
     case 'delete':
       await cmdDelete(slug, photoId);
+      break;
+    case 'delete-single':
+      await cmdDeleteSingle(photoId);
       break;
   }
 }

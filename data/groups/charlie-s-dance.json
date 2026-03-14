@@ -1,0 +1,70 @@
+{
+  "slug": "charlie-s-dance",
+  "title": "Charlie's dance",
+  "description": "",
+  "dateAdded": "2026-03-14T19:22:27.844Z",
+  "protected": false,
+  "coverImage": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516141/charlie-s-dance/img-0130-cover.webp",
+  "photos": [
+    {
+      "id": "img-0130",
+      "originalFilename": "IMG_0130.jpg",
+      "caption": "",
+      "order": 0,
+      "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516141/charlie-s-dance/img-0130-full.webp",
+      "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516141/charlie-s-dance/img-0130-thumb.webp",
+      "thumbWidth": 600,
+      "thumbHeight": 400,
+      "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516141/charlie-s-dance/img-0130-cover.webp",
+      "exif": {
+        "originalWidth": 6000,
+        "originalHeight": 4000
+      }
+    },
+    {
+      "id": "img-0137",
+      "originalFilename": "IMG_0137.jpg",
+      "caption": "",
+      "order": 1,
+      "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516143/charlie-s-dance/img-0137-full.webp",
+      "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516143/charlie-s-dance/img-0137-thumb.webp",
+      "thumbWidth": 600,
+      "thumbHeight": 400,
+      "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516143/charlie-s-dance/img-0137-cover.webp",
+      "exif": {
+        "originalWidth": 4339,
+        "originalHeight": 2892
+      }
+    },
+    {
+      "id": "img-0143",
+      "originalFilename": "IMG_0143.jpg",
+      "caption": "",
+      "order": 2,
+      "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516145/charlie-s-dance/img-0143-full.webp",
+      "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516144/charlie-s-dance/img-0143-thumb.webp",
+      "thumbWidth": 600,
+      "thumbHeight": 400,
+      "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516144/charlie-s-dance/img-0143-cover.webp",
+      "exif": {
+        "originalWidth": 6000,
+        "originalHeight": 4000
+      }
+    },
+    {
+      "id": "img-0150",
+      "originalFilename": "IMG_0150.jpg",
+      "caption": "",
+      "order": 3,
+      "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516147/charlie-s-dance/img-0150-full.webp",
+      "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516146/charlie-s-dance/img-0150-thumb.webp",
+      "thumbWidth": 600,
+      "thumbHeight": 400,
+      "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516146/charlie-s-dance/img-0150-cover.webp",
+      "exif": {
+        "originalWidth": 6000,
+        "originalHeight": 4000
+      }
+    }
+  ]
+}

@@ -1,12 +1,66 @@
 {
   "groups": [
     {
-      "slug": "parents-50th-at-the-cabin",
-      "title": "Parents' 50th at the Cabin",
-      "description": "2025 celebration of my parents' 50th wedding anniversary at our cabin in Grand Marais, MN.",
-      "dateAdded": "2026-03-14T18:14:56.812Z",
-      "coverImage": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773512232/parents-50th-at-the-cabin/img-0325-cover.webp",
-      "photoCount": 49,
+      "slug": "scott-s-sd-hall-of-fame-induction",
+      "title": "Scott's SD Hall of Fame Induction",
+      "description": "Scott's induction into the South Dakota High School Hall of Fame",
+      "dateAdded": "2026-03-14T19:23:55.184Z",
+      "coverImage": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516226/scott-s-sd-hall-of-fame-induction/img-0052-cover.webp",
+      "photoCount": 7,
+      "protected": false
+    },
+    {
+      "slug": "italy-2024",
+      "title": "Italy 2024",
+      "description": "Visiting Italy for Jake & Lauren's wedding",
+      "dateAdded": "2026-03-14T19:23:45.787Z",
+      "coverImage": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516167/italy-2024/r0000280-cover.webp",
+      "photoCount": 20,
+      "protected": false
+    },
+    {
+      "slug": "children-s-museum",
+      "title": "Children's museum",
+      "description": "",
+      "dateAdded": "2026-03-14T19:22:46.942Z",
+      "coverImage": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516152/children-s-museum/r0000051-cover.webp",
+      "photoCount": 4,
+      "protected": false
+    },
+    {
+      "slug": "charlie-s-montessori-graduation",
+      "title": "Charlie's Montessori graduation",
+      "description": "",
+      "dateAdded": "2026-03-14T19:22:32.034Z",
+      "coverImage": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516148/charlie-s-montessori-graduation/img-9742-cover.webp",
+      "photoCount": 3,
+      "protected": false
+    },
+    {
+      "slug": "charlie-s-dance",
+      "title": "Charlie's dance",
+      "description": "",
+      "dateAdded": "2026-03-14T19:22:27.844Z",
+      "coverImage": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516141/charlie-s-dance/img-0130-cover.webp",
+      "photoCount": 4,
+      "protected": false
+    },
+    {
+      "slug": "brooks-montessori-graduation",
+      "title": "Brooks' Montessori graduation",
+      "description": "",
+      "dateAdded": "2026-03-14T19:22:20.346Z",
+      "coverImage": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516134/brooks-montessori-graduation/img-8939-cover.webp",
+      "photoCount": 3,
+      "protected": false
+    },
+    {
+      "slug": "boundary-waters-family-dinner",
+      "title": "Boundary Waters Family Dinner",
+      "description": "Nana & Papa stopped past for dinner after the Bennett brothers came home from the Boundary Waters",
+      "dateAdded": "2026-03-14T19:22:14.043Z",
+      "coverImage": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516129/boundary-waters-family-dinner/img-9988-cover.webp",
+      "photoCount": 2,
       "protected": false
     }
   ]

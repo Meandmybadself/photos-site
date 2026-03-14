@@ -95,13 +95,14 @@ header h1 a:hover {
 }
 
 .photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 0.75rem;
+  columns: 3 280px;
+  column-gap: 0.75rem;
 }
 
 .photo-thumb {
   display: block;
+  break-inside: avoid;
+  margin-bottom: 0.75rem;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -188,6 +189,6 @@ figcaption {
   header { padding: 1.25rem 1rem 0.75rem; }
   .group-grid { padding: 0 1rem 2rem; gap: 1rem; grid-template-columns: 1fr; }
   .album { padding: 0 1rem 2rem; }
-  .photo-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.5rem; }
+  .photo-grid { columns: 2 150px; column-gap: 0.5rem; }
   .photo-detail { padding: 0 1rem 2rem; }
 }

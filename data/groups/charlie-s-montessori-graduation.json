@@ -1,0 +1,55 @@
+{
+  "slug": "charlie-s-montessori-graduation",
+  "title": "Charlie's Montessori graduation",
+  "description": "",
+  "dateAdded": "2026-03-14T19:22:32.034Z",
+  "protected": false,
+  "coverImage": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516148/charlie-s-montessori-graduation/img-9742-cover.webp",
+  "photos": [
+    {
+      "id": "img-9742",
+      "originalFilename": "IMG_9742.jpg",
+      "caption": "",
+      "order": 0,
+      "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516148/charlie-s-montessori-graduation/img-9742-full.webp",
+      "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516148/charlie-s-montessori-graduation/img-9742-thumb.webp",
+      "thumbWidth": 600,
+      "thumbHeight": 400,
+      "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516148/charlie-s-montessori-graduation/img-9742-cover.webp",
+      "exif": {
+        "originalWidth": 5146,
+        "originalHeight": 3431
+      }
+    },
+    {
+      "id": "img-9839",
+      "originalFilename": "IMG_9839.jpg",
+      "caption": "",
+      "order": 1,
+      "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516150/charlie-s-montessori-graduation/img-9839-full.webp",
+      "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516149/charlie-s-montessori-graduation/img-9839-thumb.webp",
+      "thumbWidth": 600,
+      "thumbHeight": 400,
+      "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516150/charlie-s-montessori-graduation/img-9839-cover.webp",
+      "exif": {
+        "originalWidth": 6000,
+        "originalHeight": 4000
+      }
+    },
+    {
+      "id": "img-9858",
+      "originalFilename": "IMG_9858.jpg",
+      "caption": "",
+      "order": 2,
+      "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516151/charlie-s-montessori-graduation/img-9858-full.webp",
+      "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516151/charlie-s-montessori-graduation/img-9858-thumb.webp",
+      "thumbWidth": 600,
+      "thumbHeight": 400,
+      "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516151/charlie-s-montessori-graduation/img-9858-cover.webp",
+      "exif": {
+        "originalWidth": 6000,
+        "originalHeight": 4000
+      }
+    }
+  ]
+}

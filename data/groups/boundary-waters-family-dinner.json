@@ -1,0 +1,40 @@
+{
+  "slug": "boundary-waters-family-dinner",
+  "title": "Boundary Waters Family Dinner",
+  "description": "Nana & Papa stopped past for dinner after the Bennett brothers came home from the Boundary Waters",
+  "dateAdded": "2026-03-14T19:22:14.043Z",
+  "protected": false,
+  "coverImage": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516129/boundary-waters-family-dinner/img-9988-cover.webp",
+  "photos": [
+    {
+      "id": "img-9988",
+      "originalFilename": "IMG_9988.jpg",
+      "caption": "",
+      "order": 0,
+      "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516130/boundary-waters-family-dinner/img-9988-full.webp",
+      "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516129/boundary-waters-family-dinner/img-9988-thumb.webp",
+      "thumbWidth": 600,
+      "thumbHeight": 400,
+      "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516129/boundary-waters-family-dinner/img-9988-cover.webp",
+      "exif": {
+        "originalWidth": 6000,
+        "originalHeight": 4000
+      }
+    },
+    {
+      "id": "img-9998",
+      "originalFilename": "IMG_9998.jpg",
+      "caption": "",
+      "order": 1,
+      "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516132/boundary-waters-family-dinner/img-9998-full.webp",
+      "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516132/boundary-waters-family-dinner/img-9998-thumb.webp",
+      "thumbWidth": 600,
+      "thumbHeight": 400,
+      "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516132/boundary-waters-family-dinner/img-9998-cover.webp",
+      "exif": {
+        "originalWidth": 6000,
+        "originalHeight": 4000
+      }
+    }
+  ]
+}

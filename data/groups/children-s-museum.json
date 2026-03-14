@@ -1,0 +1,70 @@
+{
+  "slug": "children-s-museum",
+  "title": "Children's museum",
+  "description": "",
+  "dateAdded": "2026-03-14T19:22:46.942Z",
+  "protected": false,
+  "coverImage": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516152/children-s-museum/r0000051-cover.webp",
+  "photos": [
+    {
+      "id": "r0000051",
+      "originalFilename": "R0000051.JPG",
+      "caption": "",
+      "order": 0,
+      "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516152/children-s-museum/r0000051-full.webp",
+      "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516152/children-s-museum/r0000051-thumb.webp",
+      "thumbWidth": 600,
+      "thumbHeight": 400,
+      "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516152/children-s-museum/r0000051-cover.webp",
+      "exif": {
+        "originalWidth": 6000,
+        "originalHeight": 4000
+      }
+    },
+    {
+      "id": "r0000057",
+      "originalFilename": "R0000057.JPG",
+      "caption": "",
+      "order": 1,
+      "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516154/children-s-museum/r0000057-full.webp",
+      "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516153/children-s-museum/r0000057-thumb.webp",
+      "thumbWidth": 600,
+      "thumbHeight": 400,
+      "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516153/children-s-museum/r0000057-cover.webp",
+      "exif": {
+        "originalWidth": 6000,
+        "originalHeight": 4000
+      }
+    },
+    {
+      "id": "r0000058",
+      "originalFilename": "R0000058.JPG",
+      "caption": "",
+      "order": 2,
+      "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516158/children-s-museum/r0000058-full.webp",
+      "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516158/children-s-museum/r0000058-thumb.webp",
+      "thumbWidth": 600,
+      "thumbHeight": 400,
+      "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516158/children-s-museum/r0000058-cover.webp",
+      "exif": {
+        "originalWidth": 6000,
+        "originalHeight": 4000
+      }
+    },
+    {
+      "id": "r0000075",
+      "originalFilename": "R0000075.JPG",
+      "caption": "",
+      "order": 3,
+      "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516164/children-s-museum/r0000075-full.webp",
+      "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516161/children-s-museum/r0000075-thumb.webp",
+      "thumbWidth": 600,
+      "thumbHeight": 900,
+      "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773516161/children-s-museum/r0000075-cover.webp",
+      "exif": {
+        "originalWidth": 6000,
+        "originalHeight": 4000
+      }
+    }
+  ]
+}
