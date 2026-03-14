@@ -10,7 +10,8 @@
     "ingest-photo": "node ingest-photo.js",
     "build": "node --env-file=.env build.js",
     "regen": "node --env-file=.env build.js --regen",
-    "delete": "node --env-file=.env build.js --delete"
+    "delete": "node --env-file=.env build.js --delete",
+    "watch": "node --env-file=.env watch.js"
   },
   "dependencies": {
     "cloudinary": "^2.5.1",
