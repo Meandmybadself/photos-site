@@ -133,5 +133,20 @@
       "originalWidth": 5712,
       "originalHeight": 4284
     }
+  },
+  {
+    "id": "img-2693",
+    "originalFilename": "IMG_2693.JPEG",
+    "caption": "",
+    "dateAdded": "2026-03-15T00:48:56.356Z",
+    "url": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773535735/_singles/img-2693-full.webp",
+    "thumbnail": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773535734/_singles/img-2693-thumb.webp",
+    "thumbWidth": 600,
+    "thumbHeight": 800,
+    "coverUrl": "https://res.cloudinary.com/meandmybadpictures/image/upload/v1773535734/_singles/img-2693-cover.webp",
+    "exif": {
+      "originalWidth": 5712,
+      "originalHeight": 4284
+    }
   }
 ]
