@@ -11,14 +11,16 @@
   <h1><a href="/">Photos</a></h1>
 </header>
 <main class="photo-detail">
-  <nav class="breadcrumb">
-    <a href="/">Home</a>
-  </nav>
   <figure>
     <img src="https://res.cloudinary.com/meandmybadpictures/image/upload/v1773524375/_singles/img-6561-full.webp" alt="Young Brooks at Ken&#39;s Barber" loading="eager">
     <figcaption>Young Brooks at Ken&#39;s Barber</figcaption>
   </figure>
   
+  <nav class="photo-pagination">
+    <a class="photo-nav photo-nav-prev" href="/photos/r0000258/">&larr; Previous</a>
+    <a class="photo-nav photo-nav-next" href="/photos/r0000155/">Next &rarr;</a>
+  </nav>
 </main>
+<script>document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){var a=document.querySelector('.photo-nav-prev');if(a)a.click()}if(e.key==='ArrowRight'){var a=document.querySelector('.photo-nav-next');if(a)a.click()}})</script>
 </body>
 </html>
