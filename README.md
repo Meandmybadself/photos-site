@@ -39,8 +39,9 @@ pnpm regen          # Regenerate HTML only (no Cloudinary changes)
 ### Delete content
 
 ```bash
-node --env-file=.env build.js --delete my-trip          # Delete an entire album
-node --env-file=.env build.js --delete my-trip img-001   # Delete a single photo
+node --env-file=.env build.js --delete my-trip            # Delete an entire album
+node --env-file=.env build.js --delete my-trip img-001    # Delete one photo from an album
+node --env-file=.env build.js --delete-single img-001     # Delete a standalone single photo
 ```
 
 ### Add photos to an existing album
@@ -50,6 +51,16 @@ node --env-file=.env build.js --delete my-trip img-001   # Delete a single photo
 3. Run `pnpm build`
 
 The build tool detects existing albums and only processes new photos.
+
+### Single photos (no album)
+
+Standalone photos live outside any album. Drop images directly into `inbox/_singles/` and run `pnpm build`; each gets a page under `/photos/<id>/` and is tracked in `data/singles.json`. To caption one, add a sidecar `inbox/_singles/<id>.json` with `{ "caption": "..." }` (the `<id>` is the slugified filename).
+
+Or use the watcher to ingest singles automatically as you drop files into a folder:
+
+```bash
+pnpm watch -- ~/Dropbox/photos    # Watches the folder; new images run a build and move to processed/
+```
 
 ### Edit metadata
 
@@ -88,6 +99,7 @@ Camera info, shooting settings, and date taken are extracted from source images 
 /albums/                    Same as homepage
 /albums/<slug>/             Album detail (photo grid)
 /albums/<slug>/<photo-id>/  Individual photo (full size, caption, prev/next nav)
+/photos/<photo-id>/         Standalone single photo (not part of an album)
 ```
 
 ## meta.yml
